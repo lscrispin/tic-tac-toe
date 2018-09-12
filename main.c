@@ -26,9 +26,16 @@ int main() {
             scanf("%d %d", &x, &y);
             jogo = play_on(jogo, x, y, 0);
         }
+        if(jogo.play == 9 && !won(jogo)){
+            system("clear");
+            printf("EMPATE!!!");
+            return 0;
+        }
     }
 
-    printf("Jogador %c ganhou em %d jogadas!", who_won(jogo), jogo.play);
+
+    printf("Jogador %c ganhou em %d jogadas!\n", who_won(jogo), jogo.play);
+
 
     return 0;
 }
