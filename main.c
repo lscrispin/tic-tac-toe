@@ -16,7 +16,6 @@ int main() {
 
     while(!won(jogo)){
         system("clear");
-        printf("%d\n",won(jogo));
         print_board(jogo);
         if(jogo.play % 2 == 0){
             printf("JOGADOR 1(X): Digite a posição da horizontal e a da vertical Ex(1 1):");
